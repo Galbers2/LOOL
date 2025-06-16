@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lunch Out Of Landfills</title>
+    <link
+      rel="stylesheet" href="styles.css"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+    </style> 
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="images/LOOL.png" alt="LOOL Logo" onclick="window.location.href='index.html';">
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tool_kit.html">Resources</a></li>
+        <li><a href="How_to.html">Getting Started</a></li>
+        <li><a href="data.html">Data</a></li>
+      </ul>
+        
+        
+    </nav>
+
+    <!-- ✅ Updated form using Formspree -->
+    <form action="https://formspree.io/f/xgvkgkpy" method="POST" class="container m-4 pl-4">
+      <div class="field">
+        <label class="label" for="firstName">First Name</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="e.g. Gunnar" name="firstName" required />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label" for="lastName">Last Name</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="e.g. Henderson" name="lastName" required />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label" for="email">Email</label>
+        <div class="control">
+          <input class="input" type="email" placeholder="e.g. JohnDoe@gmail.com" name="email" required />
+        </div>
+      </div>
+      <div class="field">
+        <label class="label" for="phone">Phone Number</label>
+        <div class="control">
+          <input class="input" type="tel" placeholder="e.g. (555) 123-4567" name="phone" required />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label" for="position">Position</label>
+        <div class="control">
+          <select class="input" name="position" required>
+            <option value="" disabled selected>Select your position</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Student">Student</option>
+            <option value="Staff">Staff</option> 
+            <option value="PTA">PTA</option>
+            <option value="Parent">Parent</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label" for="school">School</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="e.g. Oakdale High School" name="school" required />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label" for="state">State</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="e.g. Maryland" name="state" required />
+        </div>
+      </div>
+
+
+
+
+      <div class="field">
+        <label class="label" for="message">Message</label>
+        <div class="control">
+          <textarea class="textarea" placeholder="Any additional information" name="message" required></textarea>
+        </div>
+      </div>
+
+      <!-- ✅ Formspree extras -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_redirect" value="thankyou.html">
+
+
+      <button class="button is-primary" type="submit" id="submit-button">Submit</button>
+    </form>
+
+    <br>
+
+    <!-- Optional message box (can remove if not using JavaScript to trigger it) -->
+    <div id="message" style="display: none; margin: 20px; font-weight: bold; color: green; padding: 8px; background-color: beige; border-radius: 4px; border-color: aquamarine;"></div>
+
+    <!-- ✅ Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <p>We are committed to helping people begin food recovery efforts. Our team helps assist in starting the process in your area.</p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="tool_kit.html">Resources</a></li>
+              <li><a href="How_to.html">Getting Started</a></li>
+              
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contact Information</h3>
+            <p><strong>Email:</strong> <a href="mailto:joesr@bar-t.com">joesr@bar-t.com</a></p>
+            <p><strong>Phone:</strong> +1 (301) 674-7266</p>
+            <p><strong>Address:</strong> 2914 Roderick Rd, Frederick, MD, 21704</p>
+          </div>
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <ul class="social-media">
+              <li><a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Lunch Out Of Landfills. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
