@@ -1207,5 +1207,11 @@ h5 {
         }
         
                 
-                        
-  
+.linkedin-video iframe {
+    width: 100%;
+    max-width: 700px;
+    aspect-ratio: 16 / 9;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
